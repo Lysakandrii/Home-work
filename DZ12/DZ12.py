@@ -6,4 +6,4 @@ for l in initial_str:
     if l in to_delete:
         initial_str = initial_str.replace(l,"")
 
-print("#" + initial_str[:25].lower())
+print("#" + initial_str[:139].lower())
