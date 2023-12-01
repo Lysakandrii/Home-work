@@ -4,6 +4,6 @@ def common_elements():
     intersection = set(x).intersection(set(y))
     return intersection
 
-print(common_elements())
+print('Result:',common_elements())
 print(list(range(3,100,3)))
 print(list(range(5,100,5)))
