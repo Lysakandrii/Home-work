@@ -1,6 +1,6 @@
 import string
 def is_palindrome(text):
-    text = str(text.upper())
+    text = text.upper()
     for l in text:
         if l in string.punctuation:
             text = text.replace(l , "")
