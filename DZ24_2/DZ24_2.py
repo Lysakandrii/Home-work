@@ -1,7 +1,11 @@
 def prime_generator(end):
-    for i in range(end + 1):
-        if i > 1 and (i % 2 != 0 or i == 2) and (i % 3 != 0 or i == 3) and (i % 5 != 0 or i == 5):
-            yield i
+    for possible_prime in range(2,end + 1):
+        is_prime = True
+        for num in range(2, possible_prime):
+            if possible_prime % num == 0:
+                is_prime = False
+        if is_prime:
+            yield possible_prime
 
 from inspect import isgenerator
 
