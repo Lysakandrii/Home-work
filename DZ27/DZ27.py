@@ -18,7 +18,7 @@ class User:
         self.numberphone = numberphone
 
     def __str__(self):
-        return f"User: {self.name} {self.surname}"
+        return f"{self.name} {self.surname}"
 
 
 class Purchase:
@@ -34,7 +34,7 @@ class Purchase:
         products = ""
         for item, cnt in self.products.items():
             products += f'{str(item.name)}: {cnt} pcs. \n'
-        return f'Items:\n{products}'
+        return f'\nUser:{self.user}\nItems:\n{products}'
 
 
     def get_total(self):
