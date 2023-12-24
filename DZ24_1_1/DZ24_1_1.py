@@ -1,8 +1,8 @@
 def prime_generator(end):
     for possible_prime in range(2,end + 1):
         is_prime = True
-        for num in range(2, possible_prime):
-            if possible_prime % num == 0:
+        for number in range(2, possible_prime):
+            if possible_prime % number == 0:
                 is_prime = False
         if is_prime:
             yield possible_prime

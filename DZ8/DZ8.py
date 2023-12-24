@@ -1,4 +1,4 @@
-my_list = [1,3,5]
+my_list = [1,3,5,6,2]
 result = 0
 
 for x, y in enumerate(my_list):

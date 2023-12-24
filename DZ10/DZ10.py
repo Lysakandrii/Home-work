@@ -1,7 +1,7 @@
 import keyword
 import string
 
-initial_string = ('get!value')
+initial_string = ('get_value')
 first_symbol = initial_string[0]
 my_punctuationlist = string.punctuation.replace("_"," ")
 
