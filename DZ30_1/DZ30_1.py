@@ -76,7 +76,7 @@ gr = Group('PD1')
 for i in range(11):
     try:
         gr.add_student(Student('fifty-fifty', 30, 'Petro', 'Petrovych', '007'))
-    except ListIsFull as e:
-        print(e)
+    except ListIsFull as x:
+        print(x)
 
 print("Ok")
