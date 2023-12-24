@@ -8,7 +8,6 @@ class Counter:
    def set_current(self, start):
        self.current = start
 
-
    def set_max(self, max_max):
         self.max_value = max_max
 
