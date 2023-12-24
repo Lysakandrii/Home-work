@@ -31,7 +31,7 @@ class Group:
         if len(self.group) < 10:
             self.group.add(student)
         else:
-            raise TooManyStudentsError()
+            raise ListIsFull()
 
     def delete_student(self, last_name):
         if self.find_student(last_name) in self.group:
@@ -51,10 +51,10 @@ class Group:
             all_students += f'{str(student)}\n'
         return f'Number:{self.number}\n{all_students} '
 
-class TooManyStudentsError(Exception):
+class ListIsFull(Exception):
 
     def __str__(self):
-        return "TooManyStudentsError"
+        return "List is full(10 student max)"
 
 
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
@@ -76,9 +76,7 @@ gr = Group('PD1')
 for i in range(11):
     try:
         gr.add_student(Student('fifty-fifty', 30, 'Petro', 'Petrovych', '007'))
-    except TooManyStudentsError as e:
+    except ListIsFull as e:
         print(e)
 
-
-print(gr.count())
 print("Ok")
